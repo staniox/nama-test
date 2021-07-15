@@ -1,12 +1,93 @@
-// Place all the styles related to the sales controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-body{
-  background: #2E2F30;
+
+$bg-color: #3c4568;
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
 }
+%border-radius {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+%btn {
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 10pt;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  @extend %border-radius;
+}
+
+
 html {
-  background: #730E15;
+  background: #fff;
+
+  body {
+    ::-webkit-file-upload-button, a, input[type="submit"] {
+      @extend %btn;
+      color: #fff;
+      background: $bg-color ;
+      border: none;
+    }
+    h1 {
+      color: $bg-color;
+    }
+    margin: 15px;
+    @extend %flex-column;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif;
+    font-size: 12pt;
+    color: #2E2F30;
+
+    form {
+      @extend %flex-column;
+      * {
+        margin: 5px;
+      }
+    }
+
+    table {
+      text-align: center;
+      overflow:hidden;
+      border-collapse:separate;
+      border: solid #ccc 1px;
+      margin: 15px 0;
+      background: #efefef;
+
+      thead, tfoot {
+        background: #292b2c;
+        color: #efefef;
+      }
+
+      th,tr,td {
+        padding: 10px 5px;
+      }
+
+      td {
+        text-align: left;
+      }
+      .col-center {
+        text-align: center;
+      }
+    }
+
+    .show_btn {
+      @extend %btn;
+      background: #5bc0de;
+    }
+
+    .edit_btn {
+      @extend %btn;
+      background: #5cb85c;
+    }
+    .delete_btn {
+      @extend %btn;
+      background: #d9534f;
+    }
+  }
 }
-h1 {
-  color: #3c4568;
-}
+
