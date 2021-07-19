@@ -1,7 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Vendas</h1>
-
 <%= form_tag '/sales/import', :multipart => true do %>
   <label for="file">Suba aqui seu arquivo de texto</label> <%= file_field_tag "file",  required: true %>
   <%= submit_tag "Importar" %>
@@ -45,4 +43,4 @@
 
 <br>
 
-<%= link_to 'New Sale', new_sale_path %>
+<%= link_to 'Novo Registro', new_sale_path %>

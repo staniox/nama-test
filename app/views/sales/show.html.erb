@@ -1,34 +1,34 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Buyer:</strong>
+  <strong>Comprador:</strong>
   <%= @sale.buyer %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>Descrição:</strong>
   <%= @sale.description %>
 </p>
 
 <p>
-  <strong>Unit price:</strong>
+  <strong>Preço Unitário:</strong>
   <%= @sale.unit_price %>
 </p>
 
 <p>
-  <strong>Amount:</strong>
+  <strong>Quantidade:</strong>
   <%= @sale.amount %>
 </p>
 
 <p>
-  <strong>Address:</strong>
+  <strong>Endereço:</strong>
   <%= @sale.address %>
 </p>
 
 <p>
-  <strong>Provider:</strong>
+  <strong>Fornecedor:</strong>
   <%= @sale.provider %>
 </p>
 
-<%= link_to 'Edit', edit_sale_path(@sale) %> |
-<%= link_to 'Back', sales_path %>
+<%= link_to 'Editar', edit_sale_path(@sale) %> <br>
+<%= link_to 'Voltar', sales_path %>

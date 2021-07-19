@@ -1,24 +1,28 @@
-# README
+# Teste da Nama
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Teste para Nama criado por Bruno Gomes
 
-Things you may want to cover:
+## Requisitos
+ruby >= 3.0.0
 
-* Ruby version
+rails >= 6.1.4
 
-* System dependencies
+sqlite3 >= 1.4
 
-* Configuration
+## Instalação (apenas sistemas unix)
 
-* Database creation
+Após baixado entre na pasta do projeto e execute os seguintes comandos:
 
-* Database initialization
+```bash
+bundle install
 
-* How to run the test suite
+rails webpacker:install
 
-* Services (job queues, cache servers, search engines, etc.)
+rake db:migrate
 
-* Deployment instructions
+rails server
+```
 
-* ...
+## Uso
+
+Acesse a url fornecida pelo console e navegue na aplicação.
